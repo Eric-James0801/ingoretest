@@ -10,14 +10,14 @@ var routes = {
     }
   }
 
-  http.createServer(function (request, response) {
-    console.log(request.url);
-    if (request.url in routes) {
-    return routes[request.url](request, response);
-    }
-    response.writeHead(404);
-    response.end(http.STATUS_CODES[404]);
-  }).listen(1337);
+  // http.createServer(function (request, response) {
+  //   console.log(request.url);
+  //   if (request.url in routes) {
+  //   return routes[request.url](request, response);
+  //   }
+  //   response.writeHead(404);
+  //   response.end(http.STATUS_CODES[404]);
+  // }).listen(1337);
 
 
 const http = require("http");
